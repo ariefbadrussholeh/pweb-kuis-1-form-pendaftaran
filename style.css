@@ -58,7 +58,7 @@ ul {
 }
 
 main {
-  width: 800px;
+  width: 70%;
   background-color: white;
   border-style: ridge;
   border-width: 6px;
@@ -116,4 +116,40 @@ span {
   width: 50%;
   border-style: double;
   padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  label {
+    width: 50%;
+  }
+  input {
+    width: 45%;
+  }
+  select {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  main {
+    width: 90%;
+  }
+  label {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  h1 {
+    font-size: 18px;
+  }
 }
