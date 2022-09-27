@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Pendaftaran</title>
+  </head>
+  <body>
+    <main>
+      <h1>FORMULIR REGISTRASI</h1>
+      <h2>PESERTA</h2>
+      <form action="">
+        <label for="nama">Nama Lengkap & Gelar</label>
+        <input type="text" name="nama" id="nama" autofocus />
+        <label for="kota">Asal Instansi/Kota</label>
+        <input type="text" name="nama" id="kota" />
+        <label for="alamat">Alamat</label>
+        <input type="text" name="alamat" id="alamat" />
+        <label for="kode-pos">Kode Pos</label>
+        <input type="text" name="kode-pos" id="kode-pos" />
+        <label for="provinsi">Provinsi</label>
+        <select name="provinsi" id="provinsi"></select>
+        <label for="telepon">Telepon/Handphone</label>
+        <input type="number" name="telepon" id="telepon" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="sponsor">Sponsor</label>
+        <input type="text" name="sponsor" id="sponsor" />
+        <label for="nama-perusahaan">- Nama Perusahaan</label>
+        <input type="text" name="nama-perusahaan" id="nama-perusahaan" />
+        <label for="alamat-perusahaan">- Alamat Perusahaan</label>
+        <input type="text" name="alamat-perusahaan" id="alamat-perusahaan" />
+        <label for="nama-kontak-personal">- Nama Kontak Personal</label>
+        <input type="text" name="nama-kontak-personal" id="nama-kontak-personal" />
+        <label for="telp-personal">- Telp. Personal</label>
+        <input type="number" name="telp-personal" id="telp-personal" />
+        <label for="email-perusahaan">- Email Perusahaan</label>
+        <input type="email" name="email-perusahaan" id="email-perusahaan" />
+        <button id="submit" onclick="validate()">Registrasi</button>
+      </form>
+      <p>Kontribusi peserta Rp2.500.000,- (Dua Juta Lima Ratus Ribu Rupiah) belum termasuk penginapan dan akomodasi.</p>
+      <p>Konfirmasi Kepesertaan :</p>
+      <ul>
+        <li>Sebelum 15 Januari 2012 : Rp2.500.000,-</li>
+        <li>Sesudah 15 Januari 2012 : Rp2.750.000,-</li>
+        <li>On site : Rp3.000.000,-</li>
+      </ul>
+      <p>Pembatalan Pendaftaran :</p>
+      <ul>
+        <li>sebelum H-5 uang dikembalikan 50%</li>
+        <li>sesudah H-5 uang tidak dapat dikembalikan</li>
+      </ul>
+      <p>Akomodasi penginapan peserta, harga kamar kelas standar berkisar antara Rp250.000,- sampai Rp300.000,-</p>
+      <p>
+        <span>Pendaftaran via transfer Bank ke : <br />Nama Bank : Bank BCA KCU Cirebon <br />No. Rekening : 1341015478 <br />Atas Nama : Junaedi, S.Kep</span>
+      </p>
+
+      <section class="card">
+        <p>
+          Bukti transfer mohon dikirim ke alamat Sekretariat Panitia UPTD Puskesmas Sitopeng. <br />Jl. Sekarsari No. 1 Argasunya Hajarmukti Kota Cirebon atau kirim ke email : enterprenurse41@gmail.com <br />Konfirmasi setelah transfer ke
+          0818232869
+        </p>
+      </section>
+    </main>
+    <!-- Javascript -->
+    <script src="main.js"></script>
+  </body>
+</html>

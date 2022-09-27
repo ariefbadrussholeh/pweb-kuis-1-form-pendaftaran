@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  background-color: rgb(177, 232, 255);
+  background-color: linear-gradient(0deg, rgba(177, 232, 255, 1) 0%, rgba(0, 181, 255, 1) 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  display: block;
+  background-color: orange;
+  width: fit-content;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10%;
+  position: absolute;
+  top: -25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 15px 0;
+}
+
+ul {
+  margin-left: 18px;
+  margin-bottom: 15px 0;
+}
+
+main {
+  width: 800px;
+  background-color: white;
+  border-style: ridge;
+  border-width: 6px;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  padding: 24px;
+  position: relative;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+
+input {
+  display: inline-block;
+  width: 65%;
+  height: 28px;
+  padding: 12px 6px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+select {
+  display: inline-block;
+  width: 65%;
+  height: 28px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 40px;
+  margin: 10px 0;
+  font-size: 16px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: rgb(209, 255, 209);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+span {
+  font-weight: 700;
+}
+
+.card {
+  width: 50%;
+  border-style: double;
+  padding: 10px;
+}
