@@ -33,9 +33,37 @@ function validate() {
   const telpPersonal = document.getElementById("telp-personal").value;
   const emailPerusahaan = document.getElementById("email-perusahaan").value;
 
-  var letters = /^[A-Za-z]+$/;
+  var letterTest = /\d/;
+  var emailTest = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
 
-  if (nama == "" || kota == "" || alamat == "" || kodePos == "" || telepon == "" || email == "" || sponsor == "" || namaPerusahaan == "" || alamatPerusahaan == "" || namaKontakPersonal == "" || telpPersonal == "" || emailPerusahaan == "") {
+  if (letterTest.test(nama)) {
+    alert("Nama tidak boleh berupa angka");
+  } else if (letterTest.test(kota)) {
+    alert("Kota tidak boleh berupa angka");
+  } else if (letterTest.test(sponsor)) {
+    alert("Sponsor tidak boleh berupa angka");
+  } else if (letterTest.test(namaPerusahaan)) {
+    alert("Nama Perusahaan tidak boleh berupa angka");
+  } else if (letterTest.test(namaKontakPersonal)) {
+    alert("Nama Kontak Personal tidak boleh berupa angka");
+  } else if (!emailTest.test(email)) {
+    alert("Isikan format email dengan tepat");
+  } else if (!emailTest.test(emailPerusahaan)) {
+    alert("Isikan format email perusahaan dengan tepat");
+  } else if (
+    nama == "" ||
+    kota == "" ||
+    alamat == "" ||
+    kodePos == "" ||
+    telepon == "" ||
+    email == "" ||
+    sponsor == "" ||
+    namaPerusahaan == "" ||
+    alamatPerusahaan == "" ||
+    namaKontakPersonal == "" ||
+    telpPersonal == "" ||
+    emailPerusahaan == ""
+  ) {
     alert("Masih ada kolom yang kosong, isi terlebih dahulu");
   } else {
     alert("Selamat anda berhasil registrasi");
